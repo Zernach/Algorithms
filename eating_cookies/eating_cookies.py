@@ -7,7 +7,7 @@ import sys
 # recursive solution
 def eating_cookies(n, cache=None):
   count = 0
-  while 
+  while  
   pass
 
 if __name__ == "__main__":
