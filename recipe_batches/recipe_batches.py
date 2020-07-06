@@ -3,7 +3,18 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+  # If the receipe calls for more variety of ingredients than stock, 
+  # then no batches can be made
+  if len(recipe) > len(ingredients):
+    return 0
+  
+  # Else, do some basic division, and round the lowest answer down
+  # to return the number of batches that can be made with stock
+  ingreds = list(ingredients.keys())
+  batch_list = []
+  for i in ingreds:
+    batch_list.append(ingredients[i] / recipe[i])
+  return math.floor(min(batch_list))
 
 
 if __name__ == '__main__':
