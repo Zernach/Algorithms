@@ -3,7 +3,7 @@
 import argparse
 
 def find_max_profit(prices):
-  # finds max profit to be earned
+  # finds max profit to be earned 
   profit = 0
   
   return profit
